@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calories: 0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="310dp"
+        android:layout_height="207dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="176dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:rotationY="20"
+                android:text="Potato: 200 calories"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:rotationY="20"
+                android:text="Thin Steak: 360 calories"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:rotationY="20"
+                android:text="Thick Steak: 700 calories"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:rotationY="20"
+                android:text="Kale Salad: 240 calories"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="137dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/food1"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:background="#F1E896"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#270505" />
+
+            <EditText
+                android:id="@+id/food2"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:background="#F1E896"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#270505" />
+
+            <EditText
+                android:id="@+id/food3"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:background="#F1E896"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#270505" />
+
+            <EditText
+                android:id="@+id/food4"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:background="#F1E896"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="#270505" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
